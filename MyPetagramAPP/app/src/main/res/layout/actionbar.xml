@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/MiActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/purple_200"
+    android:elevation="4dp"
+    app:logo="@drawable/huella"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:text="@string/nombre_app"
+            android:textAllCaps="false"
+            android:textIsSelectable="true"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/favorito"
+            android:layout_toRightOf="@id/tvTitulo"
+            android:id="@+id/btnFavorito"
+            android:layout_centerVertical="true"
+            android:background="@color/purple_200"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
